@@ -70,7 +70,14 @@ def Hollow_Square(size,edge_remainder):
         print( "#" * size)
 #Hollow_Square(8,2)
 
+# relfection
 
+"""When looking between the code that I sent in for week 2 and the answers I see a lot of similarities. 
+I think all my answers are correct and display the right outcomes but obviously it's not gonna be the same code. 
+There are definitely a lot of simplair steps I could have taken like in the solutions for the greeting. They use the list while I use a dictionary. 
+This is a key change that may lead to more steps in my code. Although they both could lead to the same outcomes just one has a few more steps. 
+I think overall I did good making the code lead to the right outcomes but there are some things I can change when it comes to putting together functions like this in the future. 
+I think a list in the future would be a big help in being able to store data easier than a dictions especially in bigger datasets."""
 
 
 
