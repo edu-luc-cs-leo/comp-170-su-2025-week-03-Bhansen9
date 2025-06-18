@@ -1,40 +1,40 @@
 
 
-
-
-
 """Diamond shape
 
 Write a function `draw_diamond` that draws a diamond shape of a specified height"""
 
 def Diamond_shape():
-    N = input("How tall should the Diamond shape be: ")
+    N = int(input("How tall should the Diamond shape be: "))
+    second_line_amounts = N * 0.6
+    first_line_amounts = int(N * 0.33)
+    middle_line_spaces_amount = (N - second_line_amounts) / 2
+    end_line_spaces_amount = (N - first_line_amounts) / 2
+    for i in range(int(N/5)):
+        print(" " * int(end_line_spaces_amount) + "#" * int(first_line_amounts) + " " * int(end_line_spaces_amount))
+    for i in range(int(N/5)):
+        print(" " * int(middle_line_spaces_amount) + "#" * int(second_line_amounts) + " " * int(middle_line_spaces_amount))
+    for i in range(int(N/5)):
+        print("#"* N)
+    for i in range(int(N/5)):
+        print(" " * int(middle_line_spaces_amount) + "#" * int(second_line_amounts) + " " * int(middle_line_spaces_amount))
+    for i in range(int(N/5)):
+        print(" " * int(end_line_spaces_amount) + "#" * int(first_line_amounts) + " " * int(end_line_spaces_amount))
+#Diamond_shape()
 
 
-    Aspect_ratio = 1
-    first_line_proportion = 0.2
-    second_line_proportion = 0.2
-    middle_line_porportion = 0.2
-    fourth_line_porportion = 0.2
-    fifth_line_proportion = 0.2
+"""## Right triangle
 
-    # fifth line
-    fifth_Tier = int(N / Aspect_ratio)
-    fifth_Tier = int(N * fifth_line_proportion)
+Write a function `draw_right_triangle` that draws a right angle triangle whose height is specified as a parameter to the function."""
 
-    # fourth line
-    fourth_line_porportion = int(N / Aspect_ratio)
-
-
-
-
-
-
-
-
-
-
-
+def right_triangle(height):
+    count = height
+    limit = 1
+    while count > 0:
+        print(" #"* limit)
+        limit  += 1
+        count -= 1
+#right_triangle(9)
 
 """ Compound interest
 
@@ -54,15 +54,10 @@ def compound_int():
         print(f"{time_gone_by}st year with {interest_per_year} interest per year: ${start_amount}")
 # compound_int()
 
-
-
-
-
 """## Hollow square 
 
 Write a function `draw_hollow_square` that draws a square that is empty in the middle. The size of the square's and the thickness of its edge should be given as parameters. 
 For example `draw_hollow_square(8,2)` should produce the following drawing:"""
-
 
 def Hollow_Square(size,edge_remainder):
     hole_size = size - edge_remainder * 2
@@ -74,6 +69,15 @@ def Hollow_Square(size,edge_remainder):
     for i in range(int(size / 4)):
         print( "#" * size)
 #Hollow_Square(8,2)
+
+
+
+
+
+
+
+
+
 
 
 
